@@ -7,43 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="main">
-        <div class="header">
-            <a href="#" class="ti-book"><h3>Libraly</h3></a>
-            <div id="search">
-                <label for="searchname">Tên Sinh</label>
-                <input type="text" name="" id="searchname">
-                <label for="searchmasv">Mã Sinh viên</label>
-                <input type="text" name="" id="searchmasv">
-                <label for="searchsach">Tên Sách</label>
-                <input type="text" name="" id="searchsach">
-            </div>
-            <button id="btn-open">+Thêm</button>
-            <div id="modal-container">
-                <div id="modal">
-                    <div id="modal-header">
-                        <h3>Nhập thông tin tại đây</h3>
-                        <div class="ti-close" id="btn-close"></div>
-                    </div>
-                    <div id="modal-content">
-                        <form id="modal-form">
-                            <label for="tensv">Họ Tên:</label>
-                            <input type="text" name="hoten" id="tensv">
-                            <label for="masv">Mã Sinh Viên:</label>
-                            <input type="text" name="masv" id="masv">
-                            <label for="tensach">Tên Sách</label> 
-                            <input type="text" name="tensach" id="tensach">
-                            <label for="star">Ngày Mượn</label> 
-                            <input type="date" name="ngaymuon" id="ngaymuon">
-                            <label for="end">Ngày Trả</label> 
-                            <input type="date" name="ngaytra" id="ngaytra">
-                            <br>
-                            <input type="submit" name="submit" id="submit">
-                        </form>
-                    </div>
+    <div class="header">
+        <img src="https://www.utc.edu.vn/assets/utc/images/logo.png" alt="">
+        <div class="userinfo">
+            <p>Welcome, User</p>
+            <a href="">Đăng xuất</a>
+        </div>
+        <nav>
+            <ul>
+                <li class = "thispage"><a href="" >QUẢN LÝ SÁCH</a></li>
+                <li><a href="">LOẠI SÁCH</a></li>
+                <li id="qltm"><a href="">QUẢN LÝ MƯỢN TRẢ</a></li>
+                <li><a href="">QUẢN LÝ SINH VIÊN</a></li>
+            </ul>
+        </nav>
+        <div class="header-container">
+        <div id="search">
+            <label for="searchname">Tên Sinh</label>
+            <input type="text" name="" id="searchname">
+            <label for="searchmasv">Mã Sinh viên</label>
+            <input type="text" name="" id="searchmasv">
+            <label for="searchsach">Tên Sách</label>
+            <input type="text" name="" id="searchsach">
+        </div>
+        <button id="btn-open">+Thêm</button>
+        </div>
+        <div id="modal-container">
+            <div id="modal">
+                <div id="modal-header">
+                    <h3>Nhập thông tin tại đây</h3>
+                    <div class="ti-close" id="btn-close"></div>
+                </div>
+                <div id="modal-content">
+                    <form id="modal-form">
+                        <label for="tensv">Họ Tên:</label>
+                        <input type="text" name="hoten" id="tensv">
+                        <label for="masv">Mã Sinh Viên:</label>
+                        <input type="text" name="masv" id="masv">
+                        <label for="tensach">Tên Sách</label> 
+                        <input type="text" name="tensach" id="tensach">
+                        <label for="star">Ngày Mượn</label> 
+                        <input type="date" name="ngaymuon" id="ngaymuon">
+                        <label for="end">Ngày Trả</label> 
+                        <input type="date" name="ngaytra" id="ngaytra">
+                        <br>
+                        <input type="submit" name="submit" id="submit">
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="main">
         <div class="content">
 			<div id="thongke">
 				<h3>Thống kê</h3>
@@ -243,11 +257,6 @@
 
             
         });
-        var content = document.querySelector(".content");
-        content.style.marginTop = "70px";
-
-        var list = document.getElementById("list");
-        list.style.marginLeft = "20px";
     </script>
 </body>
 </html>

@@ -8,16 +8,46 @@
 }
 
 .header{
-    top : 0;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    height: 50px;
-    background: linear-gradient(to bottom, #0f55e1, #3c5381);
-    text-align: center;
-    line-height: 25px;
-    position: fixed;
     width: 100%;
+    height: fit-content;
+    padding: 10px;
+    background: #fff;
+}
+.header nav li{
+    display: inline-block;
+    width: fit-content;
+    margin-right: 10px;
+    padding: 0 5px;
+    height: 50px;
+    line-height: 50px;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}
+.header a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.userinfo{
+    float: right;
+    margin: 30px;
+}
+
+.header-container{
+    width: 100%;
+    display: flex;
+    background-color: #00377a;
+    margin-left: -10px;
+    height: 70px;
+}
+
+.header #qltm{
+    background-color: #00377a;
+    border-top-left-radius: 10px;
+}
+
+.header #qltm > a{
+    color: #fff;
 }
 
 .ti-book {
@@ -35,6 +65,10 @@
     font-family: "Arial", sans-serif;
 }
 
+#search{
+    margin-top: 20px;
+}
+
 #search input{
     padding : 0 10px;
     border-radius: 6px;
@@ -46,6 +80,7 @@
 }
 
 #btn-open{
+    margin-top: 20px;
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5 );
@@ -89,7 +124,6 @@
 }
 
 #btn-close:hover{
-    font-size: 18px;
     color: red;
 }
 
@@ -134,8 +168,8 @@
 .content{
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
     height: auto;
+    margin-top: -20px;
 }
 
 .content #thongke > #week{
