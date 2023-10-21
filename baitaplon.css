@@ -3,10 +3,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.main{
-    background: rgba(0, 0, 0, 0.5 );
-}
-
 .header{
     width: 100%;
     height: fit-content;
@@ -169,7 +165,6 @@
     display: flex;
     justify-content: space-between;
     height: auto;
-    margin-top: -20px;
 }
 
 .content #thongke > #week{
@@ -179,12 +174,6 @@
     border-radius: 6px;
     padding-top : 3px;
     color: #000;
-}
-
-.content{
-    margin : 20px;
-    justify-content: space-between;
-    display: flex;
 }
 
 .content > #thongke{
@@ -216,12 +205,6 @@
 
 .content #quantity ul > li p{
     padding : 10px;
-}
-
-.content > #list tbody{
-    color : #fff;
-    height: auto;
-    margin-left: -40px;
 }
 
 .content > #list tbody > tr > td{
@@ -261,8 +244,7 @@
 
 @media (max-width: 883px) {
     .header{
-        height: auto;
-        display: block;
+        width: auto;
     }
     .content{
         display: block;
