@@ -1,0 +1,200 @@
+*{
+    margin : 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main{
+    background: rgba(0, 0, 0, 0.5 );
+}
+
+.header{
+    top : 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    height: 50px;
+    background: linear-gradient(to bottom, #0f55e1, #3c5381);
+    text-align: center;
+    line-height: 25px;
+    position: fixed;
+    width: 100%;
+}
+
+.ti-book {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.ti-book > h3 {
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+}
+
+#search input{
+    padding : 0 10px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#search label{
+    color : #fff;
+}
+
+#btn-open{
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5 );
+    margin-bottom: 20px;
+}
+
+#btn-open:hover{
+    color: green;
+}
+
+#modal-container{
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease-in-out;
+}
+
+#modal-container.show{
+    opacity: 1;
+    pointer-events: all;
+    transition: all 0.25s ease-in-out;
+}
+
+#modal-header{
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+#btn-close{ 
+    margin-top: 15px;
+    float : right;
+    cursor: pointer;
+}
+
+#btn-close:hover{
+    font-size: 18px;
+    color: red;
+}
+
+#modal{
+    background: #fff;
+    max-width: 500px;
+    position: relative;
+    top : 100px;
+    transition: all 0.25s ease-in-out;
+    border-radius: 4px;
+}
+
+#modal-content{
+    padding: 5px;
+    height: 80%;
+    margin : auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+#modal-content label{  
+    display: flex;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top : 10px;
+    margin-left: 30px;
+}
+#modal-content input{
+    border-radius: 8px;
+    font-size: 16px;
+    margin-left: 30px;
+}
+#submit{
+    margin-top: 20px;
+    cursor: pointer;
+}
+#submit:hover{
+    font-size: 18px;
+    color: green;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5 );
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    height: auto;
+}
+
+.content #thongke > #week{
+    display: block;
+    height: 30px;
+    background: #0bad5a;
+    border-radius: 6px;
+    padding-top : 3px;
+    color: #000;
+}
+
+.content{
+    margin : 20px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.content > #thongke{
+    max-width: 200px;
+    float: left;
+    margin-left: -5px;
+}
+
+.content > #thongke >h3{
+    margin-left: 40px;
+    padding: 10px;
+    color : #fff
+}
+
+.content #quantity{
+    width: 250px;
+    float: left;
+}
+
+.content #quantity ul > li{
+    list-style-type: none;
+    padding: 5px;
+    height: 50px;
+    background: #1d8980;
+    color : #fff;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.content #quantity ul > li p{
+    padding : 10px;
+}
+
+.content > #list tbody{
+    color : #fff;
+    height: auto;
+    margin-left: -40px;
+}
+
+.content > #list tbody > tr > td{
+    border-bottom: 1px solid #ccc;
+}
+
+.content > #list tbody > tr:hover{
+    background : rgb(63, 165, 63);
+    cursor: pointer;
+}
