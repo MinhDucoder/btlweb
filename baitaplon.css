@@ -198,3 +198,44 @@
     background : rgb(63, 165, 63);
     cursor: pointer;
 }
+
+.footer{
+    background-color: #00377a;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    color: white;
+}
+.footer i{
+    font-size: 25px;
+    display: inline-block;
+    margin: 5px;
+    color: #fff;
+}
+.footer>div{
+    width: 50%;
+    text-align: center;
+}
+.footer img{
+    max-height: 50px;
+}
+.footer p, a{
+    margin-top: 5px;
+    color: white;
+}
+
+@media (max-width: 883px) {
+    .header{
+        height: auto;
+        display: block;
+    }
+    .content{
+        display: block;
+        height: auto;
+    }
+    #thongke{
+        display: flex;
+        max-width: 768px;
+    }
+}
