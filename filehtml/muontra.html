@@ -1,58 +1,60 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Mobilestore</title>
-    <link rel="stylesheet" type="text/css" href="./baitaplon.css">
-    <link rel="stylesheet" href="../baitaplon/themify-icons/themify-icons.css">
+    <title>Quản lí mượn trả</title>
+    <link rel="stylesheet" type="text/css" href="../filecss/baitaplon.css">
+    <link rel="stylesheet" href="../themify-icons/themify-icons.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 <body>
     <div class="header">
         <img src="https://www.utc.edu.vn/assets/utc/images/logo.png" alt="">
         <div class="userinfo">
-            <p>Welcome, User</p>
-            <a href="">Đăng xuất</a>
+            <p>Welcome, Admin</p>
+            <a href="./form.html">Đăng xuất</a>
         </div>
-        <nav>
+        <nav id="page">
             <ul>
-                <li class = "thispage"><a href="" >QUẢN LÝ SÁCH</a></li>
-                <li><a href="">LOẠI SÁCH</a></li>
-                <li id="qltm"><a href="">QUẢN LÝ MƯỢN TRẢ</a></li>
-                <li><a href="">QUẢN LÝ SINH VIÊN</a></li>
+                <li><a href="../filehtml/quanlisach.html" >QUẢN LÝ SÁCH</a></li>
+                <li><a href="../filehtml/qltv.html">LOẠI SÁCH</a></li>
+                <li id="qltm"><a href="#">QUẢN LÝ MƯỢN TRẢ</a></li>
+                <li><a href="../filehtml/quanlisinhvien.html">QUẢN LÝ SINH VIÊN</a></li>
             </ul>
         </nav>
         <div class="header-container">
-        <div id="search">
-            <label for="searchname">Tên Sinh</label>
-            <input type="text" name="" id="searchname">
-            <label for="searchmasv">Mã Sinh viên</label>
-            <input type="text" name="" id="searchmasv">
-            <label for="searchsach">Tên Sách</label>
-            <input type="text" name="" id="searchsach">
-        </div>
-        <button id="btn-open">+Thêm</button>
-        </div>
-        <div id="modal-container">
-            <div id="modal">
-                <div id="modal-header">
-                    <h3>Nhập thông tin tại đây</h3>
-                    <div class="ti-close" id="btn-close"></div>
-                </div>
-                <div id="modal-content">
-                    <form id="modal-form">
-                        <label for="tensv">Họ Tên:</label>
-                        <input type="text" name="hoten" id="tensv">
-                        <label for="masv">Mã Sinh Viên:</label>
-                        <input type="text" name="masv" id="masv">
-                        <label for="tensach">Tên Sách</label> 
-                        <input type="text" name="tensach" id="tensach">
-                        <label for="star">Ngày Mượn</label> 
-                        <input type="date" name="ngaymuon" id="ngaymuon">
-                        <label for="end">Ngày Trả</label> 
-                        <input type="date" name="ngaytra" id="ngaytra">
-                        <br>
-                        <input type="submit" name="submit" id="submit">
-                    </form>
+            <div id="search">
+                <label for="searchname">Tên Sinh</label>
+                <input type="text" name="" id="searchname">
+                <label for="searchmasv">Mã Sinh viên</label>
+                <input type="text" name="" id="searchmasv">
+                <label for="searchsach">Tên Sách</label>
+                <input type="text" name="" id="searchsach">
+            </div>
+            <button id="btn-open">+Thêm</button>
+            <div id="modal-container">
+                <div id="modal">
+                    <div id="modal-header">
+                        <h3>Nhập thông tin tại đây</h3>
+                        <div class="ti-close" id="btn-close"></div>
+                    </div>
+                    <div id="modal-content">
+                        <form id="modal-form">
+                            <label for="tensv">Họ Tên:</label>
+                            <input type="text" name="hoten" id="tensv">
+                            <label for="masv">Mã Sinh Viên:</label>
+                            <input type="text" name="masv" id="masv">
+                            <label for="tensach">Tên Sách</label> 
+                            <input type="text" name="tensach" id="tensach">
+                            <label for="star">Ngày Mượn</label> 
+                            <input type="date" name="ngaymuon" id="ngaymuon">
+                            <label for="end">Ngày Trả</label> 
+                            <input type="date" name="ngaytra" id="ngaytra">
+                            <br>
+                            <input type="submit" name="submit" id="submit">
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,7 +111,7 @@
                         <td>2</td>
                         <td>Nguyễn Văn Minh</td>
                         <td>1703</td>
-                        <td>Giải Tích</td>
+                        <td>360 Động từ bất quy tắc</td>
                         <td>11-9-2023</td>
                         <td>21-10-2023</td>
                      </tr>
@@ -133,7 +135,7 @@
                         <td>5</td>
                         <td>Nguyễn Đức Vượng</td>
                         <td>1706</td>
-                        <td>KTLT</td>
+                        <td>Biến Bất Kỳ Ai Thành Khách Hàng</td>
                         <td>16-9-2023</td>
                         <td>17-10-2023</td>
                      </tr>
@@ -141,7 +143,7 @@
                         <td>6</td>
                         <td>Lê Anh Tuân</td>
                         <td>1707</td>
-                        <td>Toán rời rạc</td>
+                        <td>Thất Bại Để Thành Công</td>
                         <td>10-9-2023</td>
                         <td>10-10-2023</td>
                      </tr>
@@ -149,7 +151,7 @@
                         <td>7</td>
                         <td>Nguyễn Minh Đức</td>
                         <td>1702</td>
-                        <td>Thiết kế web</td>
+                        <td>Dám Nghĩ Lớn</td>
                         <td>9-9-2023</td>
                         <td>9-10-2023</td>
                      </tr>
@@ -157,7 +159,7 @@
                         <td>8</td>
                         <td>Nguyễn Minh Đức</td>
                         <td>1702</td>
-                        <td>Toán rời rạc</td>
+                        <td>Đắc Nhân Tâm</td>
                         <td>10-9-2023</td>
                         <td>10-10-2023</td>
                      </tr>
@@ -165,7 +167,7 @@
                         <td>9</td>
                         <td>Nguyễn Anh Tây</td>
                         <td>1708</td>
-                        <td>Vật lí</td>
+                        <td>Hành Trình Về Phương Đông</td>
                         <td>10-9-2023</td>
                         <td>10-10-2023</td>
                      </tr>
@@ -211,52 +213,7 @@
             </div>
         </div>
     </div>
-    <script>
-        const btn_open = document.getElementById('btn-open');
-        const btn_close = document.getElementById('btn-close');
-        const modal_container = document.getElementById('modal-container');
-        
-        btn_open.addEventListener('click', () => {
-            modal_container.classList.add('show');
-        })
-
-        btn_close.addEventListener('click', () => {
-            modal_container.classList.remove('show');
-        })
-
-        const modal_form = document.getElementById("modal-form");
-        const table_body = document.querySelector("table tbody");
-
-        modal_form.addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            const tensv = document.getElementById("tensv").value;
-            const masv = document.getElementById("masv").value;
-            const tensach = document.getElementById("tensach").value;
-            const ngaymuon = document.getElementById("ngaymuon").value;
-            const ngaytra = document.getElementById("ngaytra").value;
-			var studentIdRegex = /^\d+$/;
-
-            if (!tensv || !masv || !tensach || !ngaymuon || !ngaytra) {
-                window.alert("Vui lòng điền đầy đủ thông tin!");
-                return;
-            }
-
-			if (!masv.match(studentIdRegex)) {
-                event.preventDefault();
-                window.alert("Mã sinh viên chỉ được chứa ký tự số!");
-            } 
-
-            const newRow = table_body.insertRow();
-            newRow.insertCell(0).textContent = table_body.rows.length;
-            newRow.insertCell(1).textContent = tensv;
-            newRow.insertCell(2).textContent = masv;
-            newRow.insertCell(3).textContent = tensach;
-            newRow.insertCell(4).textContent = ngaymuon;
-            newRow.insertCell(5).textContent = ngaytra;
-
-            
-        });
+    <script src="../filejs/tramuon.js">
     </script>
 </body>
 </html>

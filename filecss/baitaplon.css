@@ -1,6 +1,8 @@
 *{
-    margin : 0 auto;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .header{
@@ -8,6 +10,7 @@
     height: fit-content;
     padding: 10px;
     background: #fff;
+    margin-bottom: 10px;
 }
 .header nav li{
     display: inline-block;
@@ -33,7 +36,6 @@
     width: 100%;
     display: flex;
     background-color: #00377a;
-    margin-left: -10px;
     height: 70px;
 }
 
@@ -45,6 +47,11 @@
 .header #qltm > a{
     color: #fff;
 }
+
+.header #page{
+    width: 100%;
+}
+
 
 .ti-book {
     display: flex;
@@ -63,16 +70,24 @@
 
 #search{
     margin-top: 20px;
+    width: 80%;
+
 }
 
 #search input{
     padding : 0 10px;
     border-radius: 6px;
     font-size: 16px;
+    width: 15%;
 }
 
 #search label{
     color : #fff;
+    width: 15%;
+}
+
+#search-container{
+    width: 100%;
 }
 
 #btn-open{
@@ -81,6 +96,7 @@
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5 );
     margin-bottom: 20px;
+
 }
 
 #btn-open:hover{
@@ -106,17 +122,21 @@
 }
 
 #modal-header{
-    display: flex;
     height: 50px;
     line-height: 50px;
     border-bottom: 1px solid #ccc;
+    text-align: center;
 }
 
+#modal-header h3{
+    display: inline-block;
+}
 
 #btn-close{ 
     margin-top: 15px;
     float : right;
     cursor: pointer;
+    margin-right: 15px;
 }
 
 #btn-close:hover{
@@ -130,6 +150,7 @@
     top : 100px;
     transition: all 0.25s ease-in-out;
     border-radius: 4px;
+    margin: 100px auto;
 }
 
 #modal-content{
@@ -165,6 +186,7 @@
     display: flex;
     justify-content: space-between;
     height: auto;
+    margin: ;
 }
 
 .content #thongke > #week{
@@ -177,15 +199,13 @@
 }
 
 .content > #thongke{
-    max-width: 200px;
-    float: left;
-    margin-left: -5px;
+    width: fit-content;
+    text-align: center;
 }
 
 .content > #thongke >h3{
     margin-left: 40px;
     padding: 10px;
-    color : #fff
 }
 
 .content #quantity{
@@ -199,14 +219,17 @@
     height: 50px;
     background: #1d8980;
     color : #fff;
-    margin: 10px;
     border-radius: 8px;
+    margin: 10px auto;
 }
 
 .content #quantity ul > li p{
     padding : 10px;
 }
-
+#list{
+    width: 70%;
+    margin: 10px auto;
+}
 .content > #list tbody > tr > td{
     border-bottom: 1px solid #ccc;
 }
@@ -242,16 +265,43 @@
     color: white;
 }
 
-@media (max-width: 883px) {
-    .header{
-        width: auto;
-    }
+.header >.melu{
+    display: flex;
+}
+
+@media (max-width: 900px) {
     .content{
-        display: block;
-        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap : 80px;
+    }
+    #quantity ul {
+       display: flex;
+       align-items: center;
+       position: absolute;
     }
     #thongke{
-        display: flex;
-        max-width: 768px;
+        margin: 0 100px;
     }
+    #thongke h3{
+        margin-left: 500px;
+    }
+    #quantity ul > li{
+    }
+}
+@media (max-width: 650px) {
+    #quantity ul {
+        display: flex;
+        align-items: center;
+        position: absolute;
+     }
+}
+@media (max-width:768px) {
+    .header a{
+        font-size: 1rem;
+    }
+    body{
+        zoom: 0.8;
+    }
+    
 }

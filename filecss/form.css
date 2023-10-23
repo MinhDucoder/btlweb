@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    outline: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url(../img/libraly.jpg);
+    position: relative;
+}
+.info {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.info h2:nth-child(1) {
+    width: 350px;
+    border: 2px solid #fff;
+    border-left: 1px solid #ccc;
+    border-radius: 0px 10px 10px 0px;
+    padding: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+.info h2:nth-child(2) {
+    width: 350px;
+    border: 2px solid #fff;
+    border-right: 1px solid #ccc;
+    border-radius: 10px 0px 0px 10px;
+    padding: 5px;
+    background: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background: #e1e0e0e4;
+    cursor: pointer;
+}
+.form-all {
+    width: 800px;
+    border: 2px solid silver;
+    height: 600px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 5rem;
+    left: 21rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 1;
+    background: rgba(229, 247, 167, 0.342);
+}
+.login-header, .signup-header{
+    display: flex;
+    justify-content: center;
+}
+.login-body,  .signup-body{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 210px;
+    top: 220px;
+}
+.login-body{
+   display: none;
+}
+.login-body.showLogin {
+   display: inline-flex;
+}
+.signup-body{
+    display: none;
+}
+.signup-body.showSignup{
+    display: inline-flex;
+}
+input, .btn-signup, .btn-login {
+    width: 400px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.nameLogin, .nameSignup{
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    font-size: 1.2rem;
+    pointer-events: none;
+    background: #fff;
+    border-radius: 5px;
+}
+.passLogin, .passSignup{
+    position: absolute;
+    top: 108px;
+    left: 20px;
+    font-size: 1.2rem;
+    pointer-events: none;
+    background: #fff;
+    border-radius: 5px;
+}
+.username:focus ~ .nameLogin, .username:valid ~ .nameLogin {
+    top: -10px;
+    font-size: 0.9rem;
+    color: blue;
+    transition: all 0.2s ease;
+    border-top: 2px solid blue;
+}
+.password:focus ~ .passLogin, .password:valid ~ .passLogin {
+    top: 81px;
+    font-size: 0.9rem;
+    color: blue;
+    transition: all 0.2s ease;
+    border-top: 2px solid blue;
+}
+.user-name:focus ~ .nameSignup, .user-name:valid ~ .nameSignup {
+    top: -10px;
+    font-size: 0.9rem;
+    color: blue;
+    transition: all 0.2s ease;
+    border-top: 2px solid blue;
+}
+.pass-word:focus ~ .passSignup, .pass-word:valid ~ .passSignup {
+    top: 81px;
+    font-size: 0.9rem;
+    color: blue;
+    transition: all 0.2s ease;
+    border-top: 2px solid blue;
+}
+.pass-word:focus, .user-name:focus, .password:focus, .username:focus {
+    border: 2px solid blue;
+}
+@media (max-width: 1200px) {
+    .form-all{
+        position: absolute;
+        left: calc((100% - 90%));
+    }
+}
+@media (max-width: 968px) {
+    .form-all{
+        position: absolute;
+        left: calc((100% - 97%));
+    }
+}

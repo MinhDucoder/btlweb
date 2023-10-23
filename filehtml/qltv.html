@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí sách</title>
+    <link rel="stylesheet" href="../filecss/qltv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="https://www.utc.edu.vn/assets/utc/images/logo.png" alt="">
+        <div class="userinfo">
+            <p>Welcome, Admin</p>
+            <a href="./form.html">Đăng xuất</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./quanlisach.html" >QUẢN LÝ SÁCH</a></li>
+                <li class = "loai-sach"><a href="">LOẠI SÁCH</a></li>
+                <li><a href="./muontra.html">QUẢN LÝ MƯỢN TRẢ</a></li>
+                <li><a href="./quanlisinhvien.html">QUẢN LÝ SINH VIÊN</a></li>
+            </ul>
+        </nav>
+        <div id="search-container">
+            <div class="search-field">
+                <label for="search-title"></label>
+                <input type="text" id="search-title" placeholder="Tìm kiếm theo tên sách">
+            </div>
+            <div class="search-field">
+                <label for="search-type"></label>
+                <input type="text" id="search-type" placeholder="Tìm kiếm theo loại sách">
+            </div>
+            <div class="search-field">
+                <label for="search-state"></label>
+                <input type="text" id="search-state" placeholder="Tìm kiếm theo tình trạng">
+            </div>
+            <div class="search-field">
+                <label for="search-cost"></label>
+                <input type="number" id="search-cost" placeholder="Tìm kiếm theo giá cả">
+            </div>
+            <div class="search-field">
+                <label for="search-author"></label>
+                <input type="text" id="search-author" placeholder="Tìm kiếm theo tác giả">
+            </div>    
+            <div class="search-button">
+                <button id="search-button">Tìm kiếm</button>
+            </div>
+        </div>
+        <!-- Mã HTML cho modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <p>Không tìm thấy kết quả bạn yêu cầu, vui lòng nhập lại.</p>
+            <button id="reset-search">Nhập lại</button>
+        </div>
+</div>
+
+    </header>
+    <main>
+        <section>
+            <h2>Danh sách</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Số thứ tự</th>
+                        <th>Tên sách</th>
+                        <th>Loại sách</th>
+                        <th>Số lượng</th>
+                        <th>Tình trạng</th>
+                        <th>Giá cả</th>
+                        <th>Tác giả</th>
+                        <th>NXB</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody id="book-list">
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            <div class="follow">
+                Follow us:
+                <a href="https://www.facebook.com/dhgtvtcaugiay?locale=vi_VN"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <p>Địa chỉ: Số 3 phố Cầu Giấy, P.Láng Thượng, Q.Đống Đa, Hà Nội.</p>
+                <p>Điện thoại: (84.24) 37663311</p>
+                <p>Email: dhgtvt@utc.edu.vn</p>
+                <img src="https://www.utc.edu.vn/assets/utc/images/logofooter-gtvt.png" alt="">
+            </div>
+            <div class="app">
+                Download app:
+                <a href="https://play.google.com/store/apps/details?id=vn.edu.utc.eutc&hl=vi-VN"><i class="fa-brands fa-google-play"></i></a>
+                <a href="https://apps.apple.com/vn/app/eutc/id6447959887?l=vi"><i class="fa-brands fa-app-store"></i></a>            
+                <h3>PHÂN HIỆU TẠI THÀNH PHỐ HỒ CHÍ MINH</h3>
+                <p>Địa chỉ: 450-451 Đường Lê Văn Việt, Phường Tăng Nhơn Phú A, TP. Thủ Đức (Quận 9 cũ), TP. Hồ Chí Minh</p>
+                <p>Điện thoại: (84.28) 38966798</p>
+                <p>Email: info@utc2.edu.vn</p>
+                <p>website: <a href="http://phanhieu.utc.edu.vn">http://phanhieu.utc.edu.vn</a></p>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="../filejs/qltv.js"></script>
+</body>
+</html>
